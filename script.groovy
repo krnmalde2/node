@@ -7,7 +7,7 @@ def deploy(){
         usernamePassword(
             credentialsId:'dockerhub repo',
             usernameVariable:'USER',
-            passVariable:'PASS'
+            passwordVariable:'PASS'
         )
     ]){
 
