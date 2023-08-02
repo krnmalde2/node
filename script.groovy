@@ -9,10 +9,11 @@ def deploy(){
             usernameVariable:'USER',
             passVariable:'PASS'
         )
-    ])
+    ]){
 
     sh "echo $PASS | docker login -u $USER --password-stdin"
     sh "docker push krnmalde/final:2.22"
+    }
 }
 
 return this
