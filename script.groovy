@@ -1,5 +1,5 @@
 def build(){
-    sh 'docker build -t krnmalde/final:2.22'
+    sh 'docker build -t krnmalde/final:2.22 .'
 }
 
 def deploy(){
